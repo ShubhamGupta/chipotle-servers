@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Hello Chef From <%= node['fqdn'] %>! </title>
+  </head>
+
+  <body>
+    Inside the chef. Going Berserk.
+    Hello Chef From <%= node['fqdn'] %>!
+    <BR/>
+    <p>
+      Total Memory: <%= (node['memory']['total'].to_i)/1024 %> MB of Memory.
+      Platform: <%= node['platform'] %>
+      <BR/>
+      Company Name:: <%= node['company-name'] %>
+    </p>
+  </body>
+</html>
