@@ -9,3 +9,7 @@
 execute 'Update apt cache' do
   command 'apt-get update'
 end
+
+execute 'Upgrade the installed packages' do
+  command 'apt-get upgrade -y'
+end
